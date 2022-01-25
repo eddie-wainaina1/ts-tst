@@ -17,11 +17,10 @@ const NavElementStyle: React.CSSProperties = {
     borderRadius: "4vh",
     borderColor: "white",
     margin: "2px",
-    backgroundColor: "#090A44",
+    backgroundImage: "linear-gradient(30deg,#8C8FF4,#3F42B2,#1F227A,#101258)",
     padding: "2vh",
 }
 const NavDetailsStyle: React.CSSProperties = {
     width: "80%",
-    height: "100px"
 }
 export { NavBarStyle,NavDetailsStyle,NavElementStyle,NavLinkStyle }

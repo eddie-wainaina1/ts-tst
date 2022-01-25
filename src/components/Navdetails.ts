@@ -6,7 +6,7 @@ interface UIInterface{
 
 const Pharos: UIInterface = {
     title: "Pharos UI",
-    description: "View and modify Pharos Azure Monitoring configurations without the hassle",
+    description: "View and modify Pharos Azure Monitoring configurations without the hassle. and moving on to the great things in life without actually moving on to anything,,, this is a wonderful opportunity to bridge the gap between us",
     url: "https://w-pharos-ui.azurewebsites.net"
 }
 
