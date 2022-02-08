@@ -8,9 +8,8 @@ const NavBarStyle: React.CSSProperties = {
 const NavLinkStyle: React.CSSProperties = {
     color: "whitesmoke",
     textDecoration: "none",
-    display: "inline-block",
-    width: "28%",
-    height: "100%"
+    width: "100%",
+    height: "auto"
 }
 const NavElementStyle: React.CSSProperties = {
     display: "block",
@@ -21,6 +20,8 @@ const NavElementStyle: React.CSSProperties = {
     padding: "2vh",
 }
 const NavDetailsStyle: React.CSSProperties = {
-    width: "80%",
+    width: "auto",
+    justifyContent: "center",
+    flexDirection: "column"
 }
 export { NavBarStyle,NavDetailsStyle,NavElementStyle,NavLinkStyle }

@@ -14,14 +14,17 @@ export  const Navbar = (props: NavbarProps)=>{
     return (
         <nav id="nav-bar" style={NavBarStyle}>
             <ul id="nav-details" style={NavDetailsStyle}>
-            {props.linkList.map(i=>(<a href={i.url} 
+            {props.linkList.map(i=>(
+            <li key={i.title} className="nav-element" style={NavElementStyle}>
+                <a href={i.url} 
+                target= "_blank"
+                rel = "noreferrer"
             className="nav-link" 
             style={NavLinkStyle}>
-            <li key={i.title} className="nav-element" style={NavElementStyle}>
                 <h2>{i.title}</h2>
-                <p>{i.description}</p>
+                <p>{i.description}</p></a>
             </li>
-            </a>))}
+            ))}
             </ul>
         </nav>
     )
