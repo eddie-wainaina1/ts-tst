@@ -1,4 +1,4 @@
-import { Table, TableCell, TableContainer, TableRow, Divider, TableHead, TableBody } from "@mui/material"
+import { Table, TableCell, TableContainer, TableRow, TableHead, TableBody } from "@mui/material"
 import { AccountsTableProps, Columns,headers } from "./TableTypes"
 
 // props to cloud accounts table expects
