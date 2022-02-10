@@ -29,22 +29,7 @@ export const AWSAccountsTable = (props:AccountsTableProps)=>{
     const getRow = (acc:Columns)=>{
         return(
             <TableRow key={acc.AccountId}>
-                <TableCell>{acc.AccountId}</TableCell>
-                <TableCell>{acc.OS}</TableCell>
-                <TableCell>{acc.Puppet}</TableCell>
-                <TableCell>{acc.SSM}</TableCell>
-                <TableCell>{acc.PharosMonitoring}</TableCell>
-                <TableCell>{acc.BAMMonitoring}</TableCell>
-                <TableCell>{acc.LifelineBackups}</TableCell>
-                <TableCell>{acc.APSPatching}</TableCell>
-                <TableCell>{acc.AlertLogicThreatManagement}</TableCell>
-                <TableCell>{acc.AlertLogicLogManagement}</TableCell>
-                <TableCell>{acc.TrendMicroAntiVirus}</TableCell>
-                <TableCell>{acc.TrendMicroNetworkProtection}</TableCell>
-                <TableCell>{acc.TrendMicroFileIntegrityMonitoring}</TableCell>
-                <TableCell>{acc.ThreatStack}</TableCell>
-                <TableCell> {acc.Okta}</TableCell>
-                <TableCell>{acc.Automox}</TableCell>
+                
             </TableRow>
         )
     }
