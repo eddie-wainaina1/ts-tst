@@ -83,4 +83,15 @@ export const accounts:Columns[] = [
     }
 ]
 
+export const clients = [
+    {
+        subscription_id: "53c1d90d-433d-4539-b582-90a0a82b5874",
+        tenant_id: "3e521099-8817-495c-becf-715ec86f9a23",
+        client_service_type: "Hybrid",
+        active: false,
+        client_id: "0011A00001T3XOLQA3",
+        client_name: "Stibo Systems, Inc.",
+        account_slug: "poc"
+    },
+]
 export {}

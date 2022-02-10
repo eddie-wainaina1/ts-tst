@@ -28,7 +28,7 @@ Automox:
 export const AWSAccountsTable = (props:AccountsTableProps)=>{
     const getRow = (acc:Columns)=>{
         return(
-            <TableRow style={{textAlign:"right"}} key={acc.AccountId}>
+            <TableRow key={acc.AccountId}>
                 <TableCell>{acc.AccountId}</TableCell>
                 <TableCell>{acc.OS}</TableCell>
                 <TableCell>{acc.Puppet}</TableCell>
