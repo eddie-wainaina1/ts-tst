@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
-import { HeaderStyles, LinkStyles } from "./Header.styles"
+import { HeaderStyles} from "./Header.styles"
 
 const Header = ()=>{
     return(
