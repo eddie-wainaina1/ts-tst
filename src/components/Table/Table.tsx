@@ -28,7 +28,7 @@ Automox:
 export const AWSAccountsTable = (props:AccountsTableProps)=>{
     const getRow = (acc:Columns)=>{
         return(
-            <TableRow style={{textAlign:"right"}}>
+            <TableRow style={{textAlign:"right"}} key={acc.AccountId}>
                 <TableCell>{acc.AccountId}</TableCell>
                 <TableCell>{acc.OS}</TableCell>
                 <TableCell>{acc.Puppet}</TableCell>
@@ -62,7 +62,6 @@ export const AWSAccountsTable = (props:AccountsTableProps)=>{
                 )}
             </TableRow>
             </TableHead>
-            <Divider/>
             <TableBody>
                 {props.accounts.map((acc:Columns)=>getRow(acc)
                 )}

@@ -12,7 +12,7 @@ function App() {
   /* <Navbar linkList={[Pharos,BAM,CAPO]}/> */
   return (
     <div className="App">
-      <SelectorDropDown selectedValue='true' allowedValues={['true','false','unspecified']}/>
+      <SelectorDropDown useValue={(value:string)=>{console.log(value)}} for="Client" selectedValue='true' allowedValues={['true','false','unspecified']}/>
       <AWSAccountsTable accounts={accounts}/>
     </div>
   );

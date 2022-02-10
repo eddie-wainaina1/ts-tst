@@ -3,20 +3,32 @@ import { useState } from "react"
 
 interface SelectorProps{
     allowedValues:string[],
-    selectedValue: string
+    selectedValue: string,
+    for: string,
+    useValue: Function
 }
 export const SelectorDropDown = (props:SelectorProps)=>{
-    const [selectedValue,setSelectedValue] = useState(props.selectedValue);
+    const [textValue,setTextValue] = useState(props.selectedValue);
+    const handleChange = (e:React.ChangeEvent<HTMLInputElement>)=>{
+        setTextValue(e.target.value);
+        props.useValue(e.target.value);
+    }
     return(
-        <>
-        <TextField select id="standard-basic" label={selectedValue} variant="standard">
-            {props.allowedValues.map((val)=>(
-                <MenuItem>
+        <div>
+        <TextField select onChange={handleChange} 
+        value={textValue} 
+        id={props.for+"selector"} 
+        label={"select "+props.for} 
+        variant="standard"
+        style={{width:"100%"}}
+        >
+            {props.allowedValues.map((val,i)=>(
+                <MenuItem key={i} value={val}>
                     {val}
                 </MenuItem>
             ))}
         </TextField>
-        </>
+        </div>
     )
 }
 
